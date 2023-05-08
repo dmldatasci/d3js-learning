@@ -6,7 +6,22 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
-    
+    <svg width="300" height="300" style="background-color: white;">
+        <rect x="0" y="0" width="40" height="90"
+        rx = 10 ry = 10 fill="gray" stroke="black"></rect>
+
+        <!-- cx and cy indicate centerpoint coordinates, and r indicates radius -->
+        <circle cx="20" cy="20" r="10" fill="red" stroke="black"></circle>
+        <circle cx="20" cy="45" r="10" fill="yellow" stroke="black"></circle>
+        <circle cx="20" cy="70" r="10" fill="green" stroke="black"></circle>
+
+        <!-- rx and ry indicate radii along respective axes -->
+        <ellipse cx="20" cy="200" rx="10" ry="5" fill="gray"></ellipse>
+        
+        <line x1="20" y1="92" x2="20" y2="200"
+        stroke-width="5" stroke="black"></line>
+
+    </svg>
 </body>
 <script src="index.js"></script>
 </html>
